@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" /-->
+        <item
+            android:id="@+id/nav_supermercado"
+            android:icon="@drawable/lista"
+            android:title="Supermercado" />
+        <item
+            android:id="@+id/nav_farmacia"
+            android:icon="@drawable/lista"
+            android:title="Farmacia" />
+        <item
+            android:id="@+id/nav_agro"
+            android:icon="@drawable/lista"
+            android:title="AGRO" />
+        <item
+            android:id="@+id/nav_crearLista"
+            android:icon="@drawable/nueva_lista"
+            android:title="Crear nueva lista de compras" />
+    </group>
+</menu>

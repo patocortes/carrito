@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.listacarrito.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.listacarrito.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_supermercado"
+        android:name="com.example.listacarrito.nav_supermercado"
+        android:label="Lista del supermercado"
+        tools:layout="@layout/fragment_nav_supermercado" >
+        <action
+            android:id="@+id/action_nav_supermercado_to_nav_listaSupermercado"
+            app:destination="@id/nav_listaSupermercado" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_listaSupermercado"
+        android:name="com.example.listacarrito.nav_listaSupermercado"
+        android:label="Supermercado"
+        tools:layout="@layout/fragment_nav_lista_supermercado" >
+        <action
+            android:id="@+id/action_nav_listaSupermercado_to_nav_supermercado"
+            app:destination="@id/nav_supermercado" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_farmacia"
+        android:name="com.example.listacarrito.nav_farmacia"
+        android:label="Farmacia"
+        tools:layout="@layout/fragment_nav_farmacia" >
+        <action
+            android:id="@+id/action_nav_farmacia_to_nav_listaFarmacia"
+            app:destination="@id/nav_listaFarmacia" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_listaFarmacia"
+        android:name="com.example.listacarrito.nav_listaFarmacia"
+        android:label="Lista de la farmacia"
+        tools:layout="@layout/fragment_nav_lista_farmacia" >
+        <action
+            android:id="@+id/action_nav_listaFarmacia_to_nav_farmacia"
+            app:destination="@id/nav_farmacia" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_agro"
+        android:name="com.example.listacarrito.nav_agro"
+        android:label="Compras Agro"
+        tools:layout="@layout/fragment_nav_agro" >
+        <action
+            android:id="@+id/action_nav_agro_to_nav_listaAgro"
+            app:destination="@id/nav_listaAgro" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_listaAgro"
+        android:name="com.example.listacarrito.nav_listaAgro"
+        android:label="Lista del AGRO"
+        tools:layout="@layout/fragment_nav_lista_agro" >
+        <action
+            android:id="@+id/action_nav_listaAgro_to_nav_agro"
+            app:destination="@id/nav_agro" />
+        <action
+            android:id="@+id/action_nav_listaAgro_to_nav_agro2"
+            app:destination="@id/nav_agro" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_nuevaLista"
+        android:name="com.example.listacarrito.nav_nuevaLista"
+        android:label="Crear nueva lista de compras"
+        tools:layout="@layout/fragment_nav_nueva_lista" >
+        <action
+            android:id="@+id/action_nav_nuevaLista_to_nav_crearLista"
+            app:destination="@id/nav_crearLista" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_crearLista"
+        android:name="com.example.listacarrito.nav_crearLista"
+        android:label="Nueva lista de compras"
+        tools:layout="@layout/fragment_nav_crear_lista" >
+        <action
+            android:id="@+id/action_nav_crearLista_to_nav_nuevaLista"
+            app:destination="@id/nav_nuevaLista" />
+    </fragment>
+
+</navigation>

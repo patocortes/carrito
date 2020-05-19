@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_supermercado">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        <!--android:text="@string/hello_blank_fragment" /-->
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#F11212"
+        android:textSize="70px"
+        android:layout_marginTop="40px"
+        android:text="Mantequilla" />
+    <!--android:text="@string/hello_blank_fragment" /-->
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#F11212"
+        android:textSize="70px"
+        android:layout_marginTop="130px"
+        android:text="Leche" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#F11212"
+        android:textSize="70px"
+        android:layout_marginTop="220px"
+        android:text="Cloro" />
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nav_farmacia">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#0C2DCF"
+        android:textSize="70px"
+        android:layout_marginTop="40px"
+        android:text="Desodorante" />
+    <!--android:text="@string/hello_blank_fragment" /-->
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#0C2DCF"
+        android:textSize="70px"
+        android:layout_marginTop="130px"
+        android:text="Talco" />
+
+</FrameLayout>
